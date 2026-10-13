@@ -6,7 +6,7 @@
     <title>Douglas Araújo | Enfermería Domiciliaria en Buenos Aires</title>
     <meta
       name="description"
-      content="Enfermería domiciliaria profesional en Buenos Aires y CABA. Aplicación de inyectables, curaciones, sueroterapia, extracción de sangre y más. Douglas Araújo, técnico en enfermería."
+      content="Enfermería domiciliaria profesional en Buenos Aires y CABA. Aplicación de inyectables, curaciones, sueroterapia, extracción de sangre y más. Atención con cuidado humano y responsable."
     />
     <meta
       name="keywords"
@@ -1329,6 +1329,74 @@
           justify-content: center;
         }
       }
+
+      /* HIDDEN + EQUIPO + PRIVACIDAD */
+      [hidden] {
+        display: none !important;
+      }
+      .team-section {
+        padding: 70px 8%;
+        background: var(--light-gray);
+      }
+      .team-heading {
+        font-size: 1.6rem;
+        color: var(--black);
+        margin-bottom: 1.5rem;
+      }
+      .team-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem 3rem;
+        max-width: 900px;
+      }
+      .team-member {
+        border-left: 3px solid var(--burgundy);
+        padding-left: 1.1rem;
+      }
+      .team-name {
+        font-size: 1.15rem;
+        font-weight: 600;
+        color: var(--black);
+      }
+      .team-role {
+        color: var(--burgundy);
+        margin-top: 0.25rem;
+      }
+      .team-meta {
+        color: var(--gray);
+        font-size: 0.9rem;
+        margin-top: 0.35rem;
+        line-height: 1.5;
+      }
+      .team-meta a {
+        color: var(--burgundy);
+      }
+      .team-note {
+        color: var(--gray);
+        font-size: 0.9rem;
+        margin-top: 1.5rem;
+      }
+      .privacy-section {
+        padding: 50px 8%;
+        background: var(--white);
+        color: var(--gray);
+        font-size: 0.85rem;
+        line-height: 1.7;
+      }
+      .privacy-section p {
+        max-width: 760px;
+        margin-bottom: 0.75rem;
+      }
+      .privacy-heading {
+        font-size: 1.1rem;
+        color: var(--black);
+        margin-bottom: 0.75rem;
+      }
+      @media (max-width: 700px) {
+        .team-list {
+          grid-template-columns: 1fr;
+        }
+      }
     </style>
   </head>
   <body>
@@ -1338,7 +1406,7 @@
       <ul class="nav-links">
         <li><a href="#servicios">Servicios</a></li>
         <li><a href="#sobre-mi">Sobre mí</a></li>
-        <li><a href="#testimonios">Testimonios</a></li>
+        <!-- <li><a href="#testimonios">Testimonios</a></li> -->
         <li><a href="#contacto">Contacto</a></li>
         <li>
           <a href="https://wa.me/5491127662905" target="_blank" class="nav-cta"
@@ -1354,7 +1422,7 @@
     <div class="mobile-menu" id="mobileMenu">
       <a href="#servicios" onclick="toggleMenu()">Servicios</a>
       <a href="#sobre-mi" onclick="toggleMenu()">Sobre mí</a>
-      <a href="#testimonios" onclick="toggleMenu()">Testimonios</a>
+      <!-- <a href="#testimonios" onclick="toggleMenu()">Testimonios</a> -->
       <a href="#contacto" onclick="toggleMenu()">Contacto</a>
       <a
         href="https://wa.me/5491127662905"
@@ -1378,8 +1446,8 @@
         </h1>
         <p class="hero-subtitle">
           Cuidado profesional, humano y responsable en la comodidad de tu hogar.
-          Inyectables, curaciones, sueros, extracciones y más — sin turnos en
-          guardia.
+          Inyectables, curaciones, sueros, extracciones y más, con indicación
+          médica cuando corresponde.
         </p>
         <div class="hero-buttons">
           <a
@@ -1426,13 +1494,13 @@
           <div class="hero-card hero-card-1">
             <div class="hero-card-icon">💉</div>
             <div class="hero-card-title">Inyectables a domicilio</div>
-            <div class="hero-card-sub">Sin esperar en guardia</div>
+            <div class="hero-card-sub">Con indicación médica</div>
           </div>
 
           <div class="hero-card hero-card-2">
             <div class="hero-card-icon">🩹</div>
             <div class="hero-card-title">Curaciones profesionales</div>
-            <div class="hero-card-sub">Técnica y cuidado certificado</div>
+            <div class="hero-card-sub">Técnica aséptica y seguimiento</div>
           </div>
         </div>
       </div>
@@ -1463,8 +1531,8 @@
           <h3 class="service-name">Aplicación de inyectables</h3>
           <p class="service-desc">
             Aplicación de inyecciones intramusculares, subcutáneas e
-            intravenosas de forma segura y profesional en tu domicilio. Sin
-            turnos, sin traslados.
+            intravenosas de forma segura y profesional en tu domicilio, con
+            indicación médica. Sin traslados.
           </p>
         </div>
 
@@ -1495,9 +1563,8 @@
           <div class="service-icon">🧴</div>
           <h3 class="service-name">Sueroterapia</h3>
           <p class="service-desc">
-            Colocación de sueros y hidratación intravenosa domiciliaria. Ideal
-            para cuadros de deshidratación, recuperación post-quirúrgica y
-            estados febriles.
+            Colocación de sueros y hidratación intravenosa domiciliaria. Siempre con indicación médica, para cuadros como deshidratación o
+            recuperación post-quirúrgica.
           </p>
         </div>
 
@@ -1506,8 +1573,9 @@
           <div class="service-icon">🩸</div>
           <h3 class="service-name">Extracción de sangre</h3>
           <p class="service-desc">
-            Extracción de muestras sanguíneas para análisis clínicos en la
-            comodidad de tu hogar. Procedimiento rápido, seguro e indoloro.
+            Extracción de muestras sanguíneas para análisis clínicos, con orden
+            médica, en la comodidad de tu hogar. Procedimiento rápido y con
+            medidas de bioseguridad.
           </p>
         </div>
 
@@ -1588,8 +1656,9 @@
         <div class="divider left"></div>
 
         <p class="about-text">
-          Soy <strong>Douglas Araújo</strong>, técnico en enfermería con amplia
-          experiencia en atención domiciliaria en Buenos Aires y CABA. Mi
+          Soy <strong>Douglas Araújo</strong> y me dedico a la atención de
+          enfermería domiciliaria en Buenos Aires y CABA. Actualmente curso la
+          Licenciatura en Enfermería. Mi
           vocación es brindar cuidados de calidad en el lugar más cómodo para el
           paciente: su propio hogar.
         </p>
@@ -1601,14 +1670,13 @@
         </p>
         <p class="about-text">
           Trabajo con los más altos estándares de seguridad, bioseguridad y
-          ética profesional, garantizando procedimientos correctos, seguros y
-          sin complicaciones.
+          ética profesional, con el objetivo de realizar procedimientos correctos y seguros.
         </p>
 
         <div class="about-qualities">
           <div class="quality-item">
             <span class="quality-icon">🎓</span>
-            <span class="quality-text">Técnico en Enfermería certificado</span>
+            <span class="quality-text">Licenciatura en Enfermería en curso</span>
           </div>
           <div class="quality-item">
             <span class="quality-icon">❤️</span>
@@ -1652,8 +1720,27 @@
       </div>
     </section>
 
+    <!-- RESPALDO PROFESIONAL -->
+        <section class="team-section" id="equipo">
+      <h2 class="team-heading">Equipo de enfermería</h2>
+      <div class="team-list">
+        <div class="team-member">
+          <div class="team-name">Douglas Araújo</div>
+          <div class="team-role">Enfermería domiciliaria</div>
+          <div class="team-meta">Licenciatura en Enfermería en curso</div>
+        </div>
+        <div class="team-member">
+          <div class="team-name">Lic. Mariano Javier Carmona</div>
+          <div class="team-role">Enfermero licenciado responsable</div>
+          <div class="team-meta">Licenciado en Enfermería, matrícula N.° 97124. Supervisa y firma los cuidados, y también atiende pacientes. La matrícula se puede verificar en el REFEPS, a través de <a href="https://sisa.msal.gov.ar" target="_blank" rel="noopener">SISA</a>.</div>
+        </div>
+      </div>
+      <p class="team-note">Los procedimientos que lo requieren se realizan con indicación médica.</p>
+    </section>
+
     <!-- TESTIMONIALS -->
-    <section class="testimonials-section" id="testimonios">
+    <!-- Testimonios ocultos hasta confirmar que son reales y contar con autorizacion de cada persona. Para mostrarlos, quitar el atributo hidden de la seccion. -->
+    <section class="testimonials-section" id="testimonios" hidden>
       <div class="section-header">
         <span class="section-tag" style="color: var(--gold)">Testimonios</span>
         <h2 class="section-title">Lo que dicen<br />mis pacientes</h2>
@@ -1779,8 +1866,9 @@
         </h2>
         <div class="divider"></div>
         <p class="section-desc">
-          Consultá sin compromiso. Respondemos por WhatsApp de forma inmediata.
-          Atendemos en toda la Ciudad Autónoma de Buenos Aires.
+          Consultá sin compromiso. Escribime por WhatsApp y te respondo a la
+          brevedad. Atiendo en la Ciudad Autónoma de Buenos Aires y Gran
+          Buenos Aires.
         </p>
       </div>
 
@@ -1789,7 +1877,8 @@
           <h3>Hablemos</h3>
           <p>
             La forma más rápida de agendar un servicio es por WhatsApp. También
-            podés dejarnos un mensaje y te contactamos a la brevedad.
+            podés
+            dejarme un mensaje y te contacto a la brevedad.
           </p>
 
           <div class="contact-methods">
@@ -1891,11 +1980,11 @@
             <div class="form-group">
               <label>Mensaje</label>
               <textarea
-                placeholder="Contanos brevemente qué necesitás y cuándo..."
+                placeholder="Contame brevemente qué necesitás y cuándo..."
               ></textarea>
             </div>
 
-            <button type="submit" class="btn-submit">Enviar consulta →</button>
+            <button type="submit" class="btn-submit">Enviar por WhatsApp</button>
 
             <p
               style="
@@ -1905,14 +1994,28 @@
                 margin-top: 0.5rem;
               "
             >
-              También podés escribirnos directamente por
+              También podés escribirme directamente por
               <a
                 href="https://wa.me/5491127662905"
                 target="_blank"
                 style="color: var(--burgundy)"
                 >WhatsApp</a
               >
-              para una respuesta inmediata.
+              para una respuesta más rápida.
+            </p>
+            <p
+              style="
+                font-size: 0.75rem;
+                color: var(--gray);
+                text-align: center;
+                margin-top: 0.5rem;
+              "
+            >
+              Al enviar se abre WhatsApp con tu consulta. Evitá incluir datos
+              médicos detallados en el primer mensaje.
+              <a href="#privacidad" style="color: var(--burgundy)"
+                >Política de privacidad</a
+              >
             </p>
           </form>
         </div>
@@ -1957,7 +2060,7 @@
 
     <!-- SOCIAL STRIP -->
     <div class="social-strip">
-      <div class="social-text">Seguinos en redes sociales</div>
+      <div class="social-text">Escribime por WhatsApp</div>
       <div class="social-links">
         <a
           href="https://wa.me/5491127662905"
@@ -1971,45 +2074,29 @@
             />
           </svg>
         </a>
-        <a
-          href="https://instagram.com"
-          target="_blank"
-          class="social-link"
-          title="Instagram"
-        >
-          <svg
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="1.5"
-            width="20"
-            height="20"
-          >
-            <rect x="2" y="2" width="20" height="20" rx="5" />
-            <circle cx="12" cy="12" r="4" />
-            <circle
-              cx="17.5"
-              cy="6.5"
-              r="1"
-              fill="currentColor"
-              stroke="none"
-            />
-          </svg>
-        </a>
-        <a
-          href="https://facebook.com"
-          target="_blank"
-          class="social-link"
-          title="Facebook"
-        >
-          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
-            <path
-              d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
-            />
-          </svg>
-        </a>
-      </div>
+        </div>
     </div>
+
+    <!-- PRIVACIDAD -->
+    <section class="privacy-section" id="privacidad">
+      <h2 class="privacy-heading">Política de privacidad</h2>
+      <p>
+        Los datos que ingresás en el formulario (nombre, teléfono, servicio,
+        barrio y mensaje) se usan únicamente para responder tu consulta y
+        coordinar la atención. El formulario abre WhatsApp con tu mensaje, por
+        lo que también rigen las condiciones de esa aplicación. Los datos no se
+        ceden a terceros ni se publican.
+      </p>
+      <p>
+        Podés pedir acceso, rectificación o supresión de tus datos escribiendo
+        por WhatsApp. Responsable: Douglas Cravo de Araujo.
+      </p>
+      <p>
+        La Agencia de Acceso a la Información Pública, órgano de control de la
+        Ley 25.326, atiende las denuncias y reclamos por incumplimiento de las
+        normas de protección de datos personales.
+      </p>
+    </section>
 
     <!-- FOOTER -->
     <footer>
@@ -2022,9 +2109,11 @@
             >Douglas <span>Araújo</span></a
           >
           <p>
-            Técnico en enfermería especializado en atención domiciliaria en
-            Buenos Aires y CABA. Cuidado profesional, humano y responsable en tu
-            hogar.
+            Enfermería domiciliaria en Buenos Aires y CABA. Cuidado profesional,
+            humano y responsable en tu hogar.
+          </p>
+          <p style="margin-top: 0.75rem">
+            Enfermero licenciado responsable: Lic. Mariano Javier Carmona<br />Matrícula N.° 97124
           </p>
         </div>
         <div class="footer-col">
@@ -2046,19 +2135,18 @@
             </li>
             <li><a href="tel:+5491127662905">+54 911 2766-2905</a></li>
             <li><a href="#sobre-mi">Sobre Douglas</a></li>
-            <li><a href="#testimonios">Testimonios</a></li>
+            <!-- <li><a href="#testimonios">Testimonios</a></li> -->
             <li><a href="#contacto">Formulario de contacto</a></li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
         <p class="footer-copy">
-          © 2025 Douglas Araújo — Enfermería Domiciliaria Buenos Aires. Todos
+          © 2026 Douglas Araújo — Enfermería Domiciliaria Buenos Aires. Todos
           los derechos reservados.
         </p>
         <div class="footer-legal">
-          <a href="#">Privacidad</a>
-          <a href="#">Términos</a>
+          <a href="#privacidad">Privacidad</a>
         </div>
       </div>
     </footer>
@@ -2112,25 +2200,35 @@
         }
       });
 
-      // Form submit
+      // Form submit: arma el mensaje y lo envia por WhatsApp
       function handleSubmit(e) {
         e.preventDefault();
-        const btn = e.target.querySelector(".btn-submit");
-        btn.textContent = "✓ ¡Consulta enviada!";
-        btn.style.background = "#25D366";
+        const f = e.target;
+        const inputs = f.querySelectorAll("input");
+        const nombre = inputs[0].value.trim();
+        const telefono = inputs[1].value.trim();
+        const barrio = inputs[2].value.trim();
+        const servicio = f.querySelector("select").value;
+        const mensaje = f.querySelector("textarea").value.trim();
+        const lineas = [
+          "Hola Douglas! Quiero consultar sobre enfermería domiciliaria.",
+        ];
+        if (nombre) lineas.push("Nombre: " + nombre);
+        if (telefono) lineas.push("Teléfono: " + telefono);
+        if (servicio) lineas.push("Servicio: " + servicio);
+        if (barrio) lineas.push("Barrio/Localidad: " + barrio);
+        if (mensaje) lineas.push("Mensaje: " + mensaje);
+        const btn = f.querySelector(".btn-submit");
+        btn.textContent = "Abriendo WhatsApp...";
+        window.open(
+          "https://wa.me/5491127662905?text=" +
+            encodeURIComponent(lineas.join("\n")),
+          "_blank",
+        );
         setTimeout(() => {
-          btn.textContent = "Enviar consulta →";
-          btn.style.background = "";
-          e.target.reset();
-        }, 3000);
-
-        // Open WhatsApp as fallback
-        setTimeout(() => {
-          window.open(
-            "https://wa.me/5491127662905?text=Hola%20Douglas!%20Quiero%20consultar%20sobre%20un%20servicio%20de%20enfermería.",
-            "_blank",
-          );
-        }, 1000);
+          btn.textContent = "Enviar por WhatsApp";
+          f.reset();
+        }, 2500);
       }
 
       // Close mobile menu on outside click
